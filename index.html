@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodFusion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🍽️ FoodFusion</h1>
+
+    <div class="controls">
+      <select id="countrySelect">
+        <option value="">🌍 All Countries</option>
+      </select>
+      <button id="randomBtn">🎲 Surprise Me</button>
+    </div>
+
+    <div class="food-display">
+      <img id="foodImage" alt="Food Image" />
+      <h2 id="foodName"></h2>
+      <h3 id="foodCountry"></h3> <!-- ✅ newly added line for showing country -->
+      <h3 id="ingredientsTitle">Ingredients</h3>
+      <ul id="ingredientsList"></ul>
+
+      <div class="buttons">
+        <button id="favBtn">❤️ Add to Favorites</button>
+        <button id="videoBtn">▶️ Watch Video</button>
+      </div>
+    </div>
+
+    <div class="favorites">
+      <h2>⭐ Favorite Foods</h2>
+      <ul id="favList"></ul>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">No video available for this dish!</div>
+
+  <script src="script.js"></script>
+
+  <!-- Credits Footer -->
+  <footer class="credits">
+    <p>🍴 Made with ❤️ by <span class="creator">Sivaganesh S</span></p>
+  </footer>
+</body>
+</html>
